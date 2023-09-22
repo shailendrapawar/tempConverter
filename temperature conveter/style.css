@@ -1,0 +1,154 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body{
+   display: grid;
+   place-content: center;
+    /* background-color: black; */
+    height: 100vh;
+    background-image: url("background-image.jpg");
+background-size:100% 100%;
+background-repeat: no-repeat;
+}
+
+h2{
+    font-size: 20px;
+}
+.container{
+    height: 55vh;
+    width: 70vh;
+    backdrop-filter: blur(3px) saturate(136%);
+    -webkit-backdrop-filter: blur(3px) saturate(136%);
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 12px;
+    border: 2px solid white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* justify-content: center; */
+    align-items: center;
+}
+.input-fields{
+    width: 80%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+}
+#input{
+    height: 50%;
+    width: 50%;
+    outline: none;
+    border: 0px;
+    font-size:22px;
+    border-radius: 20px;
+    text-align: center;
+}
+#select{
+    height: 50%;
+    width: 30%;
+    font-size:15px;
+    border-radius: 20px;
+    outline: none;
+    border: 0px;
+}
+.calc-field{
+    width: 40%;
+    height: 10%;
+    display: grid;
+    place-items: center;
+}
+
+#button{
+    font-size: 20px;
+    font-weight: 900;
+    width:90%;
+    height:90%;
+    border-radius: 20px;
+    border: 1px solid white;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    
+}
+.result{
+    background-color: antiquewhite;
+    width:55%;
+    height: 12%;
+    border-radius: 20px;
+    display: grid;
+    place-content: center;
+    font-size: 30px;
+    font-weight: 900;
+}
+@media (min-width:320px) and (max-width:480px){
+ 
+    body{
+        display: grid;
+        place-items: center;
+    }
+    h2{
+        font-size: 18px;
+        font-weight: 900;
+    }
+    .container{
+        width:85%;
+        font-size: 12px;
+    }
+    #input{
+        width: 55%;
+        font-size: 22px;
+        font-weight: 800;
+    }
+    #select{
+        font-weight: 600;
+        font-size: 13px;
+        width: 35%;
+    }
+    #button{
+        font-size: 18px;
+        border: 2px solid #0093E9;
+        height: 35px;
+    }
+
+}
+@media (min-width:481px) and (max-width:768px){
+ 
+    body{
+        display: grid;
+        place-items: center;
+    }
+    h2{
+        font-size: 26px;
+        font-weight: 900;
+    }
+    .container{
+        width:70vh;
+        font-size: 16px;
+    }
+    #input{
+        width: 55%;
+        font-size: 27px;
+        font-weight: 700;
+        height: 45px;
+        text-align: center;
+    }
+    #select{
+        width: 35%;
+        height: 45px;
+        font-size: 23px;
+        font-weight: 700;
+        text-align: center;
+    }
+    #button{
+        font-size: 20px;
+        height: 45px;
+        border: 2px solid #0093E9;
+
+    }
+
+}
